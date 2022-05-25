@@ -36,17 +36,16 @@ specifiers:
   codelyzer: ^5.1.2
   jasmine-core: ~3.5.0
   jasmine-spec-reporter: ~4.2.1
-  karma: '>=6.3.16'
-  karma-chrome-launcher: ~3.1.0
-  karma-coverage-istanbul-reporter: ~2.1.0
-  karma-jasmine: ~3.0.1
-  karma-jasmine-html-reporter: ^1.4.2
+  karma: ^6.3.20
+  karma-chrome-launcher: ~3.1.1
+  karma-coverage-istanbul-reporter: ~2.1.1
+  karma-jasmine: ~3.0.3
+  karma-jasmine-html-reporter: ^1.7.0
   ngx-image-compress: ^8.0.4
   protractor: ~5.4.3
   rxjs: ~6.5.4
   ts-node: ~8.3.0
   tslib: ^1.10.0
-  tslint: ~6.1.0
   typescript: ~3.8.3
   zone.js: ~0.10.2
 
@@ -72,7 +71,7 @@ devDependencies:
   '@types/jasmine': 3.5.14
   '@types/jasminewd2': 2.0.10
   '@types/node': 12.20.52
-  codelyzer: 5.2.2_clxzsbhm3m5wfq7dbka262t454
+  codelyzer: 5.2.2_j3hzqxkgy6ptxk3zh6hxxfo6ru
   jasmine-core: 3.5.0
   jasmine-spec-reporter: 4.2.1
   karma: 6.3.20
@@ -82,7 +81,6 @@ devDependencies:
   karma-jasmine-html-reporter: 1.7.0_j6icyhpk7j5iwmlg3y4ms6i3ga
   protractor: 5.4.4
   ts-node: 8.3.0_typescript@3.8.3
-  tslint: 6.1.3_typescript@3.8.3
   typescript: 3.8.3
 
 packages:
@@ -2347,11 +2345,6 @@ packages:
       isarray: 1.0.0
     dev: true
 
-  /builtin-modules/1.1.1:
-    resolution: {integrity: sha512-wxXCdllwGhI2kCC0MnvTGYTMvnVZTvqgypkiTI8Pa5tcz2i6VqsqwYGgqwXji+4RgCzms6EajE4IxiUH6HH8nQ==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /builtin-status-codes/3.0.0:
     resolution: {integrity: sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ==}
     dev: true
@@ -2716,7 +2709,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /codelyzer/5.2.2_clxzsbhm3m5wfq7dbka262t454:
+  /codelyzer/5.2.2_j3hzqxkgy6ptxk3zh6hxxfo6ru:
     resolution: {integrity: sha512-jB4FZ1Sx7kZhvZVdf+N2BaKTdrrNZOL0Bj10RRfrhHrb3zEvXjJvvq298JPMJAiyiCS/v4zs1QlGU0ip7xGqeA==}
     peerDependencies:
       '@angular/compiler': '>=2.3.1 <10.0.0 || >9.0.0-beta <10.0.0 || >9.1.0-beta <10.0.0 || >9.2.0-beta <10.0.0'
@@ -2734,7 +2727,6 @@ packages:
       semver-dsl: 1.0.1
       source-map: 0.5.7
       sprintf-js: 1.1.2
-      tslint: 6.1.3_typescript@3.8.3
     dev: true
 
   /collection-visit/1.0.0:
@@ -8813,39 +8805,6 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-
-  /tslint/6.1.3_typescript@3.8.3:
-    resolution: {integrity: sha512-IbR4nkT96EQOvKE2PW/djGz8iGNeJ4rF2mBfiYaR/nvUWYKJhLwimoJKgjIFEIDibBtOevj7BqCRL4oHeWWUCg==}
-    engines: {node: '>=4.8.0'}
-    deprecated: TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.
-    hasBin: true
-    peerDependencies:
-      typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 4.0.0-dev'
-    dependencies:
-      '@babel/code-frame': 7.16.7
-      builtin-modules: 1.1.1
-      chalk: 2.4.2
-      commander: 2.20.3
-      diff: 4.0.2
-      glob: 7.2.3
-      js-yaml: 3.14.1
-      minimatch: 3.1.2
-      mkdirp: 0.5.6
-      resolve: 1.22.0
-      semver: 5.7.1
-      tslib: 1.14.1
-      tsutils: 2.29.0_typescript@3.8.3
-      typescript: 3.8.3
-    dev: true
-
-  /tsutils/2.29.0_typescript@3.8.3:
-    resolution: {integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==}
-    peerDependencies:
-      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
-    dependencies:
-      tslib: 1.14.1
-      typescript: 3.8.3
-    dev: true
 
   /tty-browserify/0.0.0:
     resolution: {integrity: sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY=}
